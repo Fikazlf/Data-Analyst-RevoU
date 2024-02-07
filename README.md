@@ -1,34 +1,34 @@
-## Analisis Transaksi Penjualan
+## Sales Transaction Analysis
 
-### Deskripsi
-Proyek ini merupakan analisis data transaksi penjualan yang dilakukan pada sebuah toko retail. Data transaksi mencakup informasi seperti tanggal transaksi, metode pembayaran, ID faktur, cabang toko, kota, tipe pelanggan, jenis kelamin pelanggan, jenis produk yang dibeli, harga satuan, dan jumlah barang yang dibeli.
+### Description
+This project involves the analysis of sales transaction data conducted at a retail store. The transaction data includes information such as transaction date, payment method, invoice ID, branch, city, customer type, customer gender, product type purchased, unit price, and quantity of items purchased.
 
-### Langkah-langkah Proyek
-1. **Pengumpulan dan Pembersihan Data:**
-   - Data transaksi diunduh dari Google Sheets dan dibaca menggunakan pandas.
-   - Dilakukan pembersihan data untuk mengatasi missing values, outlier, dan format yang tidak sesuai.
-   - Kolom 'Date' diubah menjadi tipe data datetime.
-   - Kolom baru 'Revenue' dibuat dengan mengalikan harga satuan dengan jumlah barang.
+### Project Steps
+1. **Data Collection and Cleaning:**
+   - Transaction data is downloaded from Google Sheets and read using pandas.
+   - Data cleaning is performed to handle missing values, outliers, and incorrect formats.
+   - The 'Date' column is converted to datetime data type.
+   - A new column 'Revenue' is created by multiplying unit price with quantity.
 
-2. **Eksplorasi Data Awal (EDA):**
-   - Diperiksa distribusi dan statistik ringkasan dari setiap kolom.
-   - Ditemukan dan diperbaiki kesalahan penulisan pada kolom 'Gender'.
-   - Dilakukan visualisasi untuk memahami jumlah transaksi berdasarkan metode pembayaran, cabang toko, kota, tipe pelanggan, jenis kelamin pelanggan, dan jenis produk.
+2. **Initial Data Exploration (EDA):**
+   - Distribution and summary statistics of each column are examined.
+   - Spelling errors in the 'Gender' column are identified and corrected.
+   - Visualizations are performed to understand the number of transactions by payment method, branch, city, customer type, customer gender, and product type.
 
-3. **Analisis Tren Harian:**
-   - Data diagregat berdasarkan tanggal untuk melihat tren harian pendapatan dan jumlah barang yang terjual.
-   - Dilakukan visualisasi tren harian menggunakan plot garis.
+3. **Daily Trend Analysis:**
+   - Data is aggregated by date to observe daily trends in revenue and quantity of items sold.
+   - Daily trends are visualized using line plots.
 
-4. **Analisis Pembayaran:**
-   - Data diagregat berdasarkan metode pembayaran untuk melihat total pendapatan dan jumlah transaksi untuk setiap metode pembayaran.
-   - Dilakukan visualisasi menggunakan plot batang untuk membandingkan total pendapatan dari setiap metode pembayaran.
+4. **Payment Analysis:**
+   - Data is aggregated by payment method to view total revenue and number of transactions for each payment method.
+   - Visualizations are created using bar plots to compare total revenue from each payment method.
 
-5. **Analisis Berdasarkan Jenis Kelamin dan Jenis Produk:**
-   - Data diagregat berdasarkan jenis kelamin dan jenis produk untuk melihat jumlah transaksi (faktur) untuk setiap kombinasi jenis kelamin dan jenis produk.
-   - Dilakukan visualisasi menggunakan plot batang dengan hue berdasarkan jenis kelamin untuk membandingkan jumlah transaksi berdasarkan jenis produk.
+5. **Gender and Product-Based Analysis:**
+   - Data is aggregated by gender and product type to observe the number of transactions (invoices) for each combination of gender and product type.
+   - Visualizations are created using bar plots with hue based on gender to compare the number of transactions based on product type.
 
-### Library dan Penggunaan
-Projek ini menggunakan library seperti pandas, numpy, matplotlib, dan seaborn untuk melakukan analisis data dan visualisasi. Data transaksi dibaca dari Google Sheets dan disimpan dalam bentuk DataFrame. Visualisasi dilakukan menggunakan berbagai jenis plot seperti plot garis, plot batang, dan pie chart.
+### Libraries and Usage
+This project utilizes libraries such as pandas, numpy, matplotlib, and seaborn for data analysis and visualization. Transaction data is read from Google Sheets and stored in DataFrame format. Visualizations are created using various types of plots including line plots, bar plots, and pie charts.
 
-### Tentang Data
-Data transaksi penjualan berisi informasi tentang lebih dari 1000 transaksi yang dilakukan dalam rentang waktu tertentu. Setiap transaksi mencakup detail tentang tanggal transaksi, metode pembayaran, cabang toko, kota, tipe pelanggan, jenis kelamin pelanggan, jenis produk yang dibeli, harga satuan, dan jumlah barang yang dibeli. Analisis ini bertujuan untuk memberikan wawasan tentang pola pembelian pelanggan, performa penjualan, dan preferensi pelanggan berdasarkan jenis produk dan jenis kelamin.
+### About the Data
+The sales transaction data contains information on over 1000 transactions conducted over a certain period of time. Each transaction includes details such as transaction date, payment method, branch, city, customer type, customer gender, product type purchased, unit price, and quantity of items purchased. The analysis aims to provide insights into customer purchasing patterns, sales performance, and customer preferences based on product type and gender.
